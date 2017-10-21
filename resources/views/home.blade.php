@@ -83,6 +83,8 @@
         </div>
 
         <div class="links">
+            <a href="{{route('about.index')}}">關於本站</a>
+            <a href="{{route('news.index')}}">最新消息</a>
             <a href="https://laravel.com/docs">Documentation</a>
             <a href="https://laracasts.com">Laracasts</a>
             <a href="https://laravel-news.com">News</a>
@@ -91,14 +93,5 @@
         </div>
     </div>
 </div>
-
-<td>
-    <form action="/task/{{ $task->id }}" method="POST">
-        {{ csrf_field() }}
-        {{ method_field('DELETE') }}
-
-        <button>關於我們</button>
-    </form>
-</td>
 </body>
 </html>
