@@ -11,6 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/home',['as'=> 'home.index', 'uses' =>
+    'HomeController@index']);
+     function () {
+    return view('home');
+};
+
+
+Route::get('/about',['as'=> 'about.index', 'uses' =>
+    'AboutController@index']);
+    function () {
+        return view('about');
+    };
+
+
+
+
+Route::get('/news',['as'=> 'news.index', 'uses' =>
+    'NewsController@index']);
+    function () {
+        return view('news');
+    };
