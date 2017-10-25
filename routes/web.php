@@ -12,7 +12,8 @@
 */
 
 
-Route::get('/home',['as'=> 'home.index', 'uses' =>
+
+Route::get('/',['as'=> 'home.index', 'uses' =>
     'HomeController@index']);
      
 
